@@ -1,8 +1,10 @@
 <?php
+
+	// include files to communicate with server
 	require("../../conn.php");
 	require '../../sql_query.php';
+	// generate mysql query
 	$n = count($_POST);
-
 	$columns_num = ($n -2) / 2;
 	$token = $_POST["token"];
 	$table = $_POST["table_name"];
@@ -20,8 +22,6 @@
 	$values = substr($values, 0, -2);
 	$values .= ");";
 	$mysql_query .= $columns. $values;
-	echo $mysql_query;
-
 
 	// execute sql command
 	sql_query($conn, $mysql_query);

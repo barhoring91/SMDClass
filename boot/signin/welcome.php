@@ -7,6 +7,7 @@
 	$n = count($_POST);
 	$columns_num = ($n -2) / 2;
 	$token = $_POST["token"];
+	//check for valid token
 	$table = $_POST["table_name"];
 	$mysql_query = "INSERT INTO ". $table. " (";
 	$columns = "";

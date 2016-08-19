@@ -359,3 +359,42 @@ FOREIGN KEY (reeg_feature18_id) REFERENCES REEGFeatures(id),
 FOREIGN KEY (reeg_feature19_id) REFERENCES REEGFeatures(id),
 FOREIGN KEY (reeg_feature20_id) REFERENCES REEGFeatures(id)
 );
+
+
+CREATE TABLE NeurofeedbackParameters (
+id INT(6) UNSIGNED AUTO_INCREMENT,
+name VARCHAR(30),
+reeg_feature1_id INT UNSIGNED,
+reeg_feature1_value FLOAT,
+reeg_feature2_id INT UNSIGNED,
+reeg_feature2_value FLOAT,
+reeg_feature3_id INT UNSIGNED,
+reeg_feature3_value FLOAT,
+reeg_feature4_id INT UNSIGNED,
+reeg_feature4_value FLOAT,
+reeg_feature5_id INT UNSIGNED,
+reeg_feature5_value FLOAT,
+reeg_feature6_id INT UNSIGNED,
+reeg_feature6_value FLOAT,
+reeg_feature7_id INT UNSIGNED,
+reeg_feature7_value FLOAT,
+reeg_feature8_id INT UNSIGNED,
+reeg_feature8_value FLOAT,
+reeg_feature9_id INT UNSIGNED,
+reeg_feature9_value FLOAT,
+reeg_feature10_id INT UNSIGNED,
+reeg_feature10_value FLOAT,
+created_at TIMESTAMP,
+PRIMARY KEY (id),
+FOREIGN KEY (reeg_feature1_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature2_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature3_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature4_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature5_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature6_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature7_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature8_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature9_id) REFERENCES REEGFeatures(id),
+FOREIGN KEY (reeg_feature10_id) REFERENCES REEGFeatures(id)
+);
+

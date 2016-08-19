@@ -1,2 +1,2 @@
-DROP TABLE Evaluations, Treatments, Models, REEGFeatures, ERPFeatures, Admins,  SecondOrderFeatureType, FirstOrderFeatureType, ClassificationMethods, Protocols,
+DROP TABLE Evaluations, Treatments, Models, NeurofeedbackParameters, REEGFeatures, ERPFeatures, Admins,  SecondOrderFeatureType, FirstOrderFeatureType, ClassificationMethods, Protocols,
 Modalities, Subjects, Electrodes;
